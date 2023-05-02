@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <select onchange="document.body.style.fontSize=this.value;">
-    <option value="8px">pequeña</option>
-    <option value="12px">mediana</option>
-    <option value="20px">grande</option>
+        <option value="8px">pequeña</option>
+        <option value="12px">mediana</option>
+        <option value="20px">grande</option>
     </select>
 
     <p>Con 10 cañones por banda</p>
@@ -21,8 +23,24 @@
 
     <script>
         // crea 10 párrafos
-        for(var i=0; i<10; i++)
-        document.write('<p>Hola mundo!</p>');
+        for (var i = 0; i < 10; i++)
+            document.write('<p>Hola mundo!</p>');
     </script>
+    <script>
+        function confirmar() {
+            if (confirm('Seguro?'))
+                formulario.submit();
+        }
+    </script>
+
+    <h1>Baja de usuario</h1>
+
+    <form method="post" id="formulario">
+        <label>Usuario:</label>
+        <input type="text" name="usuario" />
+        <input type="button" value="Baja" onclick="confirmar();" />
+    </form>
+
 </body>
+
 </html>
