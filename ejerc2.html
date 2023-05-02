@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio_2</title>
+</head>
+
+<body>
+    <img src="encendida.png" alt="una bombilla!" id="bombilla" onmouseenter="this.src='apagada.png';"
+        onmouseleave="this.src='encendida.png';" height="200" width="200" />
+    <br />
+    <output id="info"></output>
+    <br />
+    <button onclick="info.innerHTML=bombilla.alt;">Info</button>
+</body>
+
+</html>
